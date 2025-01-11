@@ -3,6 +3,14 @@
   "WorkspaceRootPath": "E:\\LibraSys\\LibraSys-\\LibraSys\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{3B1431D0-3D49-479B-92CF-FA00A64AD59E}|Application\\Application.csproj|e:\\librasys\\librasys-\\librasys\\application\\bookservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3B1431D0-3D49-479B-92CF-FA00A64AD59E}|Application\\Application.csproj|solutionrelative:application\\bookservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7050C8B1-F1A8-426B-B539-589A5E885A14}|API\\API.csproj|e:\\librasys\\librasys-\\librasys\\api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7050C8B1-F1A8-426B-B539-589A5E885A14}|API\\API.csproj|solutionrelative:api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{7050C8B1-F1A8-426B-B539-589A5E885A14}|API\\API.csproj|e:\\librasys\\librasys-\\librasys\\api\\endpoint\\bookendpoint.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7050C8B1-F1A8-426B-B539-589A5E885A14}|API\\API.csproj|solutionrelative:api\\endpoint\\bookendpoint.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
@@ -55,14 +63,40 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "BookService.cs",
+              "DocumentMoniker": "E:\\LibraSys\\LibraSys-\\LibraSys\\Application\\BookService.cs",
+              "RelativeDocumentMoniker": "Application\\BookService.cs",
+              "ToolTip": "E:\\LibraSys\\LibraSys-\\LibraSys\\Application\\BookService.cs",
+              "RelativeToolTip": "Application\\BookService.cs",
+              "ViewState": "AgIAABgAAAAAAAAAAAAhwCYAAAA2AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-11T13:04:37.958Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "E:\\LibraSys\\LibraSys-\\LibraSys\\API\\Program.cs",
+              "RelativeDocumentMoniker": "API\\Program.cs",
+              "ToolTip": "E:\\LibraSys\\LibraSys-\\LibraSys\\API\\Program.cs",
+              "RelativeToolTip": "API\\Program.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAACEAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-11T13:04:20.468Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "BookEndPoint.cs",
               "DocumentMoniker": "E:\\LibraSys\\LibraSys-\\LibraSys\\API\\EndPoint\\BookEndPoint.cs",
               "RelativeDocumentMoniker": "API\\EndPoint\\BookEndPoint.cs",
-              "ToolTip": "E:\\LibraSys\\LibraSys-\\LibraSys\\API\\EndPoint\\BookEndPoint.cs*",
-              "RelativeToolTip": "API\\EndPoint\\BookEndPoint.cs*",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAKAAAAAAAAAA==",
+              "ToolTip": "E:\\LibraSys\\LibraSys-\\LibraSys\\API\\EndPoint\\BookEndPoint.cs",
+              "RelativeToolTip": "API\\EndPoint\\BookEndPoint.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-11T11:39:01.127Z",
+              "WhenOpened": "2025-01-11T13:04:12.286Z",
               "EditorCaption": ""
             }
           ]

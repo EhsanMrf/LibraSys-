@@ -30,26 +30,28 @@ public class BookService : IBookService
 
     public async Task<ServiceResponse> Create(BookCreateDto book)
     {
+        await GuardOnDuplicateData(book.Title);
         return await _bookRepository.Create(book.ToBook());
     }
 
     public async Task<ServiceResponse> Update(int id, BookCreateDto bookDto)
     {
-        var book = await GuardOnBookAndReturnBook(id);
+        var book = await GuardOnBookAndBookReturn(id);
         book.Update(bookDto.Title,bookDto.PublishYear);
+        await GuardOnDuplicateData(book.BookTitle.Title,id);
 
         return await Updated(book);
     } 
     
     public async Task<ServiceResponse> Delete(int id)
     {
-        var book = await GuardOnBookAndReturnBook(id);
+        var book = await GuardOnBookAndBookReturn(id);
         book.Delete();
 
         return await Updated(book);
     }
     
-    private async Task<Book> GuardOnBookAndReturnBook(int id)
+    private async Task<Book> GuardOnBookAndBookReturn(int id)
     {
         var serviceResponse = await _bookRepository.GetBook(id);
 
@@ -62,5 +64,12 @@ public class BookService : IBookService
     private async Task<ServiceResponse> Updated(Book book)
     {
         return await _bookRepository.UpdateBook(book);
+    }
+
+    private async Task GuardOnDuplicateData(string title,int id=0)
+    {
+        if (await _bookRepository.GetByTitleNoTracking(title,id))
+            throw new Exception("Duplicate Error");
+        
     }
 }

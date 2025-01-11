@@ -40,4 +40,9 @@ public class BookRepository : IBookRepository
         var saveChangesAsync = await _libraSysContext.SaveChangesAsync();
         return saveChangesAsync.ToServiceResponse();
     }
+
+    public async Task<bool> GetByTitleNoTracking(string title, int id)
+    {
+        return await _libraSysContext.Books.AnyAsync(x => x.BookTitle.Title.Equals(title) && x.Id!=id);
+    }
 }

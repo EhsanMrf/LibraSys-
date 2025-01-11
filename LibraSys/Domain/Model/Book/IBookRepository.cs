@@ -10,4 +10,5 @@ public interface IBookRepository:IInjectScore
     Task<ServiceResponse> GetListBook(DataQueryRequest request);
     Task<ServiceResponse> Create(Book book);
     Task<ServiceResponse> UpdateBook(Book book);
+    Task<bool> GetByTitleNoTracking(string title,int id);
 }

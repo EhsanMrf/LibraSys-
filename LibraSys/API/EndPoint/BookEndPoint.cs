@@ -11,15 +11,15 @@ public static class BookEndPoint
     {
         var group = endpoint.MapGroup("book");
         group.MapGet("/{id}", async (int id, IBookService service) => await service.GetById(id));
-        group.MapPost("/get-list", async (int page,int pageNumber, IBookService service) => await service.GetList(new DataQueryRequest
+        group.MapPost("/get-list", async (int page, int pageNumber, IBookService service) => await service.GetList(new DataQueryRequest
         {
-            PageNumber = page,
+            PageNumber = page == 0 ? 1 : page,
             PageSize = pageNumber
         }));
 
 
         group.MapPost("/add", async (BookCreateDto input, IBookService service) => await service.Create(input));
-        group.MapPut("/{id}/update", async (int id, BookCreateDto input, IBookService service) => await service.Update(id,input));
+        group.MapPut("/{id}/update", async (int id, BookCreateDto input, IBookService service) => await service.Update(id, input));
         group.MapDelete("/{id}/delete", async (int id, IBookService service) => await service.Delete(id));
     }
 }

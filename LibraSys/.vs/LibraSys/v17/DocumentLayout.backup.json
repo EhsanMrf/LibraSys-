@@ -3,28 +3,24 @@
   "WorkspaceRootPath": "E:\\LibraSys\\LibraSys-\\LibraSys\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{3B1431D0-3D49-479B-92CF-FA00A64AD59E}|Application\\Application.csproj|e:\\librasys\\librasys-\\librasys\\application\\bookfluentfiltersharp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3B1431D0-3D49-479B-92CF-FA00A64AD59E}|Application\\Application.csproj|solutionrelative:application\\bookfluentfiltersharp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{3B1431D0-3D49-479B-92CF-FA00A64AD59E}|Application\\Application.csproj|e:\\librasys\\librasys-\\librasys\\application\\bookservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3B1431D0-3D49-479B-92CF-FA00A64AD59E}|Application\\Application.csproj|solutionrelative:application\\bookservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7050C8B1-F1A8-426B-B539-589A5E885A14}|API\\API.csproj|e:\\librasys\\librasys-\\librasys\\api\\endpoint\\bookendpoint.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7050C8B1-F1A8-426B-B539-589A5E885A14}|API\\API.csproj|solutionrelative:api\\endpoint\\bookendpoint.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D317E7CF-B8CD-4DB3-9BBA-A213E499D739}|Persistence.EF\\Persistence.EF.csproj|e:\\librasys\\librasys-\\librasys\\persistence.ef\\bookrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D317E7CF-B8CD-4DB3-9BBA-A213E499D739}|Persistence.EF\\Persistence.EF.csproj|solutionrelative:persistence.ef\\bookrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{9821C21E-B470-4675-933A-1E7E5082422A}|Domain\\Domain.csproj|e:\\librasys\\librasys-\\librasys\\domain\\model\\book\\ibookrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9821C21E-B470-4675-933A-1E7E5082422A}|Domain\\Domain.csproj|solutionrelative:domain\\model\\book\\ibookrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{7050C8B1-F1A8-426B-B539-589A5E885A14}|API\\API.csproj|e:\\librasys\\librasys-\\librasys\\api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7050C8B1-F1A8-426B-B539-589A5E885A14}|API\\API.csproj|solutionrelative:api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6082A71B-E582-44A1-8BC1-5EDEFB26D9EB}|Framework\\Framework.csproj|e:\\librasys\\librasys-\\librasys\\framework\\fluentfilter\\fluentfiltersharpconvert.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6082A71B-E582-44A1-8BC1-5EDEFB26D9EB}|Framework\\Framework.csproj|solutionrelative:framework\\fluentfilter\\fluentfiltersharpconvert.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{7050C8B1-F1A8-426B-B539-589A5E885A14}|API\\API.csproj|e:\\librasys\\librasys-\\librasys\\api\\endpoint\\bookendpoint.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7050C8B1-F1A8-426B-B539-589A5E885A14}|API\\API.csproj|solutionrelative:api\\endpoint\\bookendpoint.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,7 +30,7 @@
       "DocumentGroups": [
         {
           "DockedHeight": 200,
-          "SelectedChildIndex": 9,
+          "SelectedChildIndex": 11,
           "Children": [
             {
               "$type": "Bookmark",
@@ -74,80 +70,67 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "BookFluentFilterSharp.cs",
-              "DocumentMoniker": "E:\\LibraSys\\LibraSys-\\LibraSys\\Application\\BookFluentFilterSharp.cs",
-              "RelativeDocumentMoniker": "Application\\BookFluentFilterSharp.cs",
-              "ToolTip": "E:\\LibraSys\\LibraSys-\\LibraSys\\Application\\BookFluentFilterSharp.cs*",
-              "RelativeToolTip": "Application\\BookFluentFilterSharp.cs*",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAyAAAAAAAAAA==",
+              "DocumentIndex": 2,
+              "Title": "IBookRepository.cs",
+              "DocumentMoniker": "E:\\LibraSys\\LibraSys-\\LibraSys\\Domain\\Model\\Book\\IBookRepository.cs",
+              "RelativeDocumentMoniker": "Domain\\Model\\Book\\IBookRepository.cs",
+              "ToolTip": "E:\\LibraSys\\LibraSys-\\LibraSys\\Domain\\Model\\Book\\IBookRepository.cs",
+              "RelativeToolTip": "Domain\\Model\\Book\\IBookRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-11T12:37:14.214Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "FluentFilterSharpConvert.cs",
-              "DocumentMoniker": "E:\\LibraSys\\LibraSys-\\LibraSys\\Framework\\FluentFilter\\FluentFilterSharpConvert.cs",
-              "RelativeDocumentMoniker": "Framework\\FluentFilter\\FluentFilterSharpConvert.cs",
-              "ToolTip": "E:\\LibraSys\\LibraSys-\\LibraSys\\Framework\\FluentFilter\\FluentFilterSharpConvert.cs",
-              "RelativeToolTip": "Framework\\FluentFilter\\FluentFilterSharpConvert.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-11T12:28:33.677Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "BookRepository.cs",
-              "DocumentMoniker": "E:\\LibraSys\\LibraSys-\\LibraSys\\Persistence.EF\\BookRepository.cs",
-              "RelativeDocumentMoniker": "Persistence.EF\\BookRepository.cs",
-              "ToolTip": "E:\\LibraSys\\LibraSys-\\LibraSys\\Persistence.EF\\BookRepository.cs",
-              "RelativeToolTip": "Persistence.EF\\BookRepository.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAswBgAAAAEAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-11T12:28:31.272Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Program.cs",
-              "DocumentMoniker": "E:\\LibraSys\\LibraSys-\\LibraSys\\API\\Program.cs",
-              "RelativeDocumentMoniker": "API\\Program.cs",
-              "ToolTip": "E:\\LibraSys\\LibraSys-\\LibraSys\\API\\Program.cs",
-              "RelativeToolTip": "API\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAEAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-11T12:14:33.274Z",
+              "WhenOpened": "2025-01-11T13:05:00.394Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "BookRepository.cs",
+              "DocumentMoniker": "E:\\LibraSys\\LibraSys-\\LibraSys\\Persistence.EF\\BookRepository.cs",
+              "RelativeDocumentMoniker": "Persistence.EF\\BookRepository.cs",
+              "ToolTip": "E:\\LibraSys\\LibraSys-\\LibraSys\\Persistence.EF\\BookRepository.cs",
+              "RelativeToolTip": "Persistence.EF\\BookRepository.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAcwBYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-11T13:04:58.845Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
               "Title": "BookService.cs",
               "DocumentMoniker": "E:\\LibraSys\\LibraSys-\\LibraSys\\Application\\BookService.cs",
               "RelativeDocumentMoniker": "Application\\BookService.cs",
               "ToolTip": "E:\\LibraSys\\LibraSys-\\LibraSys\\Application\\BookService.cs",
               "RelativeToolTip": "Application\\BookService.cs",
-              "ViewState": "AgIAABAAAAAAAAAAAAAQwBwAAAAEAAAAAAAAAA==",
+              "ViewState": "AgIAABAAAAAAAAAAAAAawCgAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-11T12:08:33.457Z",
+              "WhenOpened": "2025-01-11T13:04:37.958Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
+              "Title": "Program.cs",
+              "DocumentMoniker": "E:\\LibraSys\\LibraSys-\\LibraSys\\API\\Program.cs",
+              "RelativeDocumentMoniker": "API\\Program.cs",
+              "ToolTip": "E:\\LibraSys\\LibraSys-\\LibraSys\\API\\Program.cs",
+              "RelativeToolTip": "API\\Program.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAACEAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-11T13:04:20.468Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "BookEndPoint.cs",
               "DocumentMoniker": "E:\\LibraSys\\LibraSys-\\LibraSys\\API\\EndPoint\\BookEndPoint.cs",
               "RelativeDocumentMoniker": "API\\EndPoint\\BookEndPoint.cs",
               "ToolTip": "E:\\LibraSys\\LibraSys-\\LibraSys\\API\\EndPoint\\BookEndPoint.cs",
               "RelativeToolTip": "API\\EndPoint\\BookEndPoint.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAMAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-11T11:39:01.127Z",
+              "WhenOpened": "2025-01-11T13:04:12.286Z",
               "EditorCaption": ""
             }
           ]
