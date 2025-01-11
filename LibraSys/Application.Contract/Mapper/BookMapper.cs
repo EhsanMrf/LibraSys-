@@ -11,7 +11,7 @@ public static class BookMapper
     }
     
 
-    public static Book ToBook(this BookDto bookDto)
+    public static Book ToBook(this BookCreateDto bookDto)
     {
         return new Book(bookDto.Title,bookDto.PublishYear);
     }

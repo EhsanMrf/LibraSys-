@@ -3,8 +3,8 @@ namespace Framework.Response;
 public sealed class ServiceResponse
 {
     public object? Data { get; private set; }
-    private object Metadata { get; set; }
-    private ResponseStatus ResponseStatus { get; set; }
+    public object Metadata { get; set; }
+    public ResponseStatus ResponseStatus { get; set; }
     
 
     private ServiceResponse()
@@ -12,22 +12,18 @@ public sealed class ServiceResponse
         
     }
 
-    internal void SetData(object data)
+    internal void RefreshData(object data)
     {
         Data = data;
     }
     
-    public static ServiceResponse InstanseResponse(object? data, IEnumerable<object> metadata, ResponseStatus responseStatus)
-    {
-        return new ServiceResponse(data, metadata, responseStatus);
-    }
-    public ServiceResponse(object? data, IEnumerable<object> metadata, ResponseStatus responseStatus)
+    public ServiceResponse(object? data, object metadata, ResponseStatus responseStatus)
     {
         SetToConstructor(data, metadata,responseStatus);
     }
 
 
-     void SetToConstructor(object? data, IEnumerable<object> metadata, ResponseStatus responseStatus)
+     void SetToConstructor(object? data, object metadata, ResponseStatus responseStatus)
     {
         Data = data;
         Metadata = metadata;

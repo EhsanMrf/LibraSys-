@@ -3,4 +3,4 @@
 /// <summary>
 /// inject implement
 /// </summary>
-public interface IScopedService;
+public interface IInjectScore;

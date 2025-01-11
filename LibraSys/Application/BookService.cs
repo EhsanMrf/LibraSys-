@@ -8,9 +8,14 @@ using Framework.Response;
 
 namespace Application;
 
-public class BookService(IBookRepository bookRepository) : IBookService
+public class BookService : IBookService
 {
-    private readonly IBookRepository _bookRepository = bookRepository;
+    private readonly IBookRepository _bookRepository ;
+
+    public BookService(IBookRepository bookRepository)
+    {
+        _bookRepository = bookRepository;
+    }
     public async Task<ServiceResponse> GetById(int id)
     {
         var book = await _bookRepository.GetBook(id);
@@ -23,12 +28,12 @@ public class BookService(IBookRepository bookRepository) : IBookService
         return serviceResponse.MapToDtos<Book, BookDto>(BookMapper.ToDto);
     }
 
-    public async Task<ServiceResponse> Add(BookDto book)
+    public async Task<ServiceResponse> Create(BookCreateDto book)
     {
-        return await _bookRepository.AddBook(book.ToBook());
+        return await _bookRepository.Create(book.ToBook());
     }
 
-    public async Task<ServiceResponse> Update(int id, BookDto bookDto)
+    public async Task<ServiceResponse> Update(int id, BookCreateDto bookDto)
     {
         var book = await GuardOnBookAndReturnBook(id);
         book.Update(bookDto.Title,bookDto.PublishYear);

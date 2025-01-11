@@ -11,7 +11,7 @@ public static class ServiceResponseExtension
         if (serviceResponse.Data is T data)
         {
             var mappedData = mapper(data);
-            serviceResponse.SetData(mappedData);
+            serviceResponse.RefreshData(mappedData);
         }
         return serviceResponse;
     } 
@@ -23,8 +23,10 @@ public static class ServiceResponseExtension
         if (serviceResponse.Data is IEnumerable<T> dataList)
         {
             var mappedDataList = dataList.Select(mapper).ToList();
-            serviceResponse.SetData(mappedDataList);
+            serviceResponse.RefreshData(mappedDataList);
         }
+
+
         return serviceResponse;
     }
 }

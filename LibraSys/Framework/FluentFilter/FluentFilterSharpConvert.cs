@@ -9,12 +9,13 @@ public static class FluentFilterSharpConvert
     {
         if (fluentFilter.PageSize==0)
             return new ServiceResponse(null, null, null);
-        
-        var responseStatusList = new List<DetailList>()
+
+        return new ServiceResponse(fluentFilter.Items, new
         {
-            new (fluentFilter.TotalCount,fluentFilter.Page,fluentFilter.PageSize)
-        };
-        return new ServiceResponse(fluentFilter.Items, responseStatusList, null);
+            fluentFilter.TotalCount,
+            fluentFilter.Page,
+            fluentFilter.PageSize
+        }, null);
     }
     
     public static ServiceResponse ToServiceResponse<T>(this T data)
