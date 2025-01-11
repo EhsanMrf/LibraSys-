@@ -1,7 +1,7 @@
 using Domian.Model.Book;
 using FluentAssertions;
 
-namespace Test
+namespace Test.Book
 {
     public class BookTitleTest
     {
