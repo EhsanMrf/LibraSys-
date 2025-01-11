@@ -1,0 +1,35 @@
+using Framework.Entity;
+using Framework.Validator;
+
+namespace Domian.Model.Book;
+
+public class Book :BaseEntity<int>
+{
+    public BookTitle BookTitle { get; private set; } = null!;
+    public BookPublishYear PublishYear { get; private set; }= null!;
+
+    private void SetData(string title, int publishYear)
+    {
+        SetBookTitle(BookTitle.CreateInstance(title));
+        SetPublishYear(BookPublishYear.CreateInstance(publishYear));
+    }
+
+    private void SetPublishYear(BookPublishYear bookPublishYear)
+    {
+        ObjectValidator.Instance
+            .RuleFor(bookPublishYear)
+            .NotNullOrEmpty(new BookException.BookTitleInvalidObjectException());
+        
+        PublishYear = bookPublishYear;
+    }
+
+
+    private void SetBookTitle(BookTitle bookTitle)
+    {
+        ObjectValidator.Instance
+            .RuleFor(bookTitle)
+            .NotNullOrEmpty(new BookException.BookTitleInvalidObjectException());
+        
+        BookTitle = bookTitle;
+    }
+}
