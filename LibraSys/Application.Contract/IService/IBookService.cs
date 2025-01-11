@@ -1,10 +1,11 @@
 using Application.Contract.Dto;
 using FilterSharp.Input;
 using Framework.Response;
+using Framework.TransientService;
 
 namespace Application.Contract.IService;
 
-public interface IBookService
+public interface IBookService :IScopedService
 {
     Task<ServiceResponse> GetById(int id);
     Task<ServiceResponse> GetList(DataQueryRequest request);

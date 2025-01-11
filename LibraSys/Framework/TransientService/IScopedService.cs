@@ -3,5 +3,4 @@
 /// <summary>
 /// inject implement
 /// </summary>
-public interface ITransientService;
-public interface ITransientServiceInfrastructure;
+public interface IScopedService;

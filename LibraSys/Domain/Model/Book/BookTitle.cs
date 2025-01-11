@@ -6,7 +6,6 @@ namespace Domian.Model.Book;
 
 public sealed class BookTitle:IValueObject
 {
-    [MaxLength(70)]
     public string Title { get; private set; } = null!;
 
     public static BookTitle CreateInstance(string title)=> new (title);

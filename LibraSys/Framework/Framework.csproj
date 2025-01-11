@@ -8,6 +8,7 @@
 
   <ItemGroup>
     <PackageReference Include="FluentFilterSharp" Version="1.0.8" />
+
   </ItemGroup>
 
 </Project>

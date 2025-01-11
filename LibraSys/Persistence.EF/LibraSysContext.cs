@@ -2,42 +2,19 @@ using System.ComponentModel.DataAnnotations;
 using System.Reflection;
 using Domian.Model.Book;
 using Microsoft.EntityFrameworkCore;
+using Persistence.EF.Configuration;
 
 namespace Persistence.EF;
 
-public class LibraSysContext(DbContextOptions<LibraSysContext> dbContextOptions) :DbContext
+public class LibraSysContext(DbContextOptions<LibraSysContext> options, DbSet<Book> books)
+    : DbContext(options)
 {
-    public DbSet<Book> Books { get; set; }
+    public DbSet<Book> Books { get; set; } = books;
 
     protected override void OnModelCreating(ModelBuilder builder)
     {
-        ApplyOwnsOne(builder);
-    }
-    
-    private void ApplyOwnsOne(ModelBuilder builder)
-    {
-        var entityTypes = builder.Model.GetEntityTypes();
+        base.OnModelCreating(builder);
 
-        foreach (var entityType in entityTypes)
-        {
-            var clrType = entityType.ClrType;
-
-            var ownedProperties = clrType.GetProperties()
-                .Where(p => typeof(IValidatableObject).IsAssignableFrom(p.PropertyType))
-                .ToList();
-
-            foreach (var property in ownedProperties)
-            {
-                var navigationBuilder = builder.Entity(clrType).OwnsOne(property.PropertyType, property.Name);
-
-                foreach (var prop in property.PropertyType.GetProperties())
-                {
-                    var maxLengthAttribute = prop.GetCustomAttribute<MaxLengthAttribute>();
-                    if (maxLengthAttribute != null)
-                        navigationBuilder.Property(prop.Name).HasMaxLength(maxLengthAttribute.Length);
-                }
-            }
-        }
-
+        builder.ApplyConfiguration(new BookConfiguration());
     }
 }

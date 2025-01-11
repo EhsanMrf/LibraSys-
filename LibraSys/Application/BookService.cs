@@ -10,21 +10,22 @@ namespace Application;
 
 public class BookService(IBookRepository bookRepository) : IBookService
 {
+    private readonly IBookRepository _bookRepository = bookRepository;
     public async Task<ServiceResponse> GetById(int id)
     {
-        var book = await bookRepository.GetBook(id);
+        var book = await _bookRepository.GetBook(id);
         return book.ToDto<Book, BookDto>(BookMapper.ToDto);
     }
 
     public async Task<ServiceResponse> GetList(DataQueryRequest request)
     {
-        var serviceResponse = await bookRepository.GetListBook(request);
+        var serviceResponse = await _bookRepository.GetListBook(request);
         return serviceResponse.MapToDtos<Book, BookDto>(BookMapper.ToDto);
     }
 
     public async Task<ServiceResponse> Add(BookDto book)
     {
-        return await bookRepository.AddBook(book.ToBook());
+        return await _bookRepository.AddBook(book.ToBook());
     }
 
     public async Task<ServiceResponse> Update(int id, BookDto bookDto)
@@ -45,7 +46,7 @@ public class BookService(IBookRepository bookRepository) : IBookService
     
     private async Task<Book> GuardOnBookAndReturnBook(int id)
     {
-        var serviceResponse = await bookRepository.GetBook(id);
+        var serviceResponse = await _bookRepository.GetBook(id);
 
         if (serviceResponse.Data is not Book book)
             throw new Exception("Book Not Found");
@@ -55,6 +56,6 @@ public class BookService(IBookRepository bookRepository) : IBookService
 
     private async Task<ServiceResponse> Updated(Book book)
     {
-        return await bookRepository.UpdateBook(book);
+        return await _bookRepository.UpdateBook(book);
     }
 }

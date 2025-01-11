@@ -3,8 +3,28 @@
   "WorkspaceRootPath": "E:\\LibraSys\\LibraSys-\\LibraSys\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{43CDA40E-21AD-49BD-A4BC-EC3D8E9C6CDE}|Test\\Test.csproj|e:\\librasys\\librasys-\\librasys\\test\\unittest1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{43CDA40E-21AD-49BD-A4BC-EC3D8E9C6CDE}|Test\\Test.csproj|solutionrelative:test\\unittest1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D317E7CF-B8CD-4DB3-9BBA-A213E499D739}|Persistence.EF\\Persistence.EF.csproj|e:\\librasys\\librasys-\\librasys\\persistence.ef\\librasyscontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D317E7CF-B8CD-4DB3-9BBA-A213E499D739}|Persistence.EF\\Persistence.EF.csproj|solutionrelative:persistence.ef\\librasyscontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7050C8B1-F1A8-426B-B539-589A5E885A14}|API\\API.csproj|e:\\librasys\\librasys-\\librasys\\api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7050C8B1-F1A8-426B-B539-589A5E885A14}|API\\API.csproj|solutionrelative:api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7050C8B1-F1A8-426B-B539-589A5E885A14}|API\\API.csproj|e:\\librasys\\librasys-\\librasys\\api\\injections\\servicecollectionextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7050C8B1-F1A8-426B-B539-589A5E885A14}|API\\API.csproj|solutionrelative:api\\injections\\servicecollectionextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3B1431D0-3D49-479B-92CF-FA00A64AD59E}|Application\\Application.csproj|e:\\librasys\\librasys-\\librasys\\application\\bookservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3B1431D0-3D49-479B-92CF-FA00A64AD59E}|Application\\Application.csproj|solutionrelative:application\\bookservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{22C4EA2E-76BB-45CB-8A64-17C0877D7E0C}|Application.Contract\\Application.Contract.csproj|e:\\librasys\\librasys-\\librasys\\application.contract\\iservice\\ibookservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{22C4EA2E-76BB-45CB-8A64-17C0877D7E0C}|Application.Contract\\Application.Contract.csproj|solutionrelative:application.contract\\iservice\\ibookservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D317E7CF-B8CD-4DB3-9BBA-A213E499D739}|Persistence.EF\\Persistence.EF.csproj|e:\\librasys\\librasys-\\librasys\\persistence.ef\\configuration\\bookconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D317E7CF-B8CD-4DB3-9BBA-A213E499D739}|Persistence.EF\\Persistence.EF.csproj|solutionrelative:persistence.ef\\configuration\\bookconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -55,14 +75,79 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "UnitTest1.cs",
-              "DocumentMoniker": "E:\\LibraSys\\LibraSys-\\LibraSys\\Test\\UnitTest1.cs",
-              "RelativeDocumentMoniker": "Test\\UnitTest1.cs",
-              "ToolTip": "E:\\LibraSys\\LibraSys-\\LibraSys\\Test\\UnitTest1.cs",
-              "RelativeToolTip": "Test\\UnitTest1.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Title": "LibraSysContext.cs",
+              "DocumentMoniker": "E:\\LibraSys\\LibraSys-\\LibraSys\\Persistence.EF\\LibraSysContext.cs",
+              "RelativeDocumentMoniker": "Persistence.EF\\LibraSysContext.cs",
+              "ToolTip": "E:\\LibraSys\\LibraSys-\\LibraSys\\Persistence.EF\\LibraSysContext.cs",
+              "RelativeToolTip": "Persistence.EF\\LibraSysContext.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-11T08:20:09.843Z",
+              "WhenOpened": "2025-01-11T11:06:35.441Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ServiceCollectionExtensions.cs",
+              "DocumentMoniker": "E:\\LibraSys\\LibraSys-\\LibraSys\\API\\Injections\\ServiceCollectionExtensions.cs",
+              "RelativeDocumentMoniker": "API\\Injections\\ServiceCollectionExtensions.cs",
+              "ToolTip": "E:\\LibraSys\\LibraSys-\\LibraSys\\API\\Injections\\ServiceCollectionExtensions.cs",
+              "RelativeToolTip": "API\\Injections\\ServiceCollectionExtensions.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAABKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-11T10:59:06.152Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "E:\\LibraSys\\LibraSys-\\LibraSys\\API\\Program.cs",
+              "RelativeDocumentMoniker": "API\\Program.cs",
+              "ToolTip": "E:\\LibraSys\\LibraSys-\\LibraSys\\API\\Program.cs",
+              "RelativeToolTip": "API\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-11T10:59:00.943Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "BookService.cs",
+              "DocumentMoniker": "E:\\LibraSys\\LibraSys-\\LibraSys\\Application\\BookService.cs",
+              "RelativeDocumentMoniker": "Application\\BookService.cs",
+              "ToolTip": "E:\\LibraSys\\LibraSys-\\LibraSys\\Application\\BookService.cs",
+              "RelativeToolTip": "Application\\BookService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAA2AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-11T10:58:20.057Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "IBookService.cs",
+              "DocumentMoniker": "E:\\LibraSys\\LibraSys-\\LibraSys\\Application.Contract\\IService\\IBookService.cs",
+              "RelativeDocumentMoniker": "Application.Contract\\IService\\IBookService.cs",
+              "ToolTip": "E:\\LibraSys\\LibraSys-\\LibraSys\\Application.Contract\\IService\\IBookService.cs",
+              "RelativeToolTip": "Application.Contract\\IService\\IBookService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-11T10:58:16.844Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "BookConfiguration.cs",
+              "DocumentMoniker": "E:\\LibraSys\\LibraSys-\\LibraSys\\Persistence.EF\\Configuration\\BookConfiguration.cs",
+              "RelativeDocumentMoniker": "Persistence.EF\\Configuration\\BookConfiguration.cs",
+              "ToolTip": "E:\\LibraSys\\LibraSys-\\LibraSys\\Persistence.EF\\Configuration\\BookConfiguration.cs",
+              "RelativeToolTip": "Persistence.EF\\Configuration\\BookConfiguration.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-11T10:54:15.464Z",
               "EditorCaption": ""
             }
           ]
