@@ -3,10 +3,21 @@ using Framework.Validator;
 
 namespace Domian.Model.Book;
 
-public class Book :BaseEntity<int>
+public sealed class Book :BaseEntity<int>
 {
     public BookTitle BookTitle { get; private set; } = null!;
     public BookPublishYear PublishYear { get; private set; }= null!;
+
+    private Book()
+    {
+        
+    }
+    public Book(string title, int publishYear)
+    {
+        SetData(title, publishYear);
+    }
+    
+    
 
     private void SetData(string title, int publishYear)
     {
