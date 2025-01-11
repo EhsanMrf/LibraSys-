@@ -1,8 +1,9 @@
+using Framework.Tag;
 using Framework.Validator;
 
 namespace Domian.Model.Book;
 
-public sealed class BookPublishYear
+public sealed class BookPublishYear:IValueObject
 {
     public int PublishYear { get; private set; }
 

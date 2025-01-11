@@ -34,6 +34,16 @@ public sealed class Book :BaseEntity<int>
         PublishYear = bookPublishYear;
     }
 
+    public void Update(string title, int publishYear)
+    {
+        SetData(title, publishYear);
+        UpdateDateTime= DateTime.Now;
+    }
+
+    public void Delete()
+    {
+        IsDeleted=true;
+    }
 
     private void SetBookTitle(BookTitle bookTitle)
     {
